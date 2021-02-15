@@ -20,7 +20,7 @@ public class CustomStarterRun {
     private RedisConfig redisConfig;
 
     @Bean
-    public CxcTemplate jackTemplate() {
+    public CxcTemplate cxcTemplate() {
         CxcTemplate cxcTemplate = new CxcTemplate(redisConfig);
         return cxcTemplate;
     }
